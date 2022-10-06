@@ -1,25 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    font-family: Roboto, sans-serif;
+}
+
 .header{
     background-color: #1F2937;
     color: #f9faf8;
     font-size: 24px;
     display: flex;
     justify-content: space-between;
-    padding: 5px;
+    padding: 5px 200px;
 }
 .section1{
     background-color: #1F2937;
-    padding: 50px;
+    padding: 50px 200px;
     display: flex;
-    gap: 20px;
-}
-.section2{
-    padding: 50px;
-}
-.section3{
-    background-color: #E5E7EB;
-    padding: 50px;
+    justify-content: space-between;
+    gap: 30px;
 
 }
+.section2{
+    padding: 50px 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.section3{
+    color: #1F2937;
+    background-color: #E5E7EB;
+    padding: 50px 200px;
+    font-size: 36px;
+    font-style: italic;
+}
+.section4{
+    padding: 100px 200px;
+    font-size: 18px;
+}
+
 .footer{
     background-color: #1F2937 ;
     color: #f9faf8;
@@ -29,7 +48,7 @@
     align-items: center; 
 }
 
-/*second level*/
+/*header  ---------------------------*/
 .links{
 }
 a{
@@ -38,6 +57,9 @@ a{
     color: #E5E7EB;
     margin-left: 20px;
 }
+
+/*Section 1  ---------------------------*/
+
 .title{
     font-size: 48px;
     color: #f9faf8;
@@ -46,11 +68,7 @@ a{
 .contenido{
     font-size: 18px;
     color: #E5E7EB;
-}
-.sec1-contenido{
-    /*display: flex;
-    flex-direction: column;
-    justify-content: space-around;*/
+    margin-top: 20px;
 }
 .b1{
     flex-shrink: 0;
@@ -58,24 +76,38 @@ a{
     color: #E5E7EB;
     padding: 4px 20px;
     border-radius: 10px;
-    border-color: none;
+    border-color: #3882F6;
     font-weight: 800;
+    margin-top: 30px;
     
 }
 .imagen{
     flex-shrink: 0;
-    background-color: rebeccapurple;
-    width: 400px;
-    height: 300px;
-
+    border-color: rebeccapurple;
+    border-style: dotted;
+    width: 350px;
+    height: 250px;
 }
+
+    
 
 /*section 2 --------------------------------*/
 .sec2-imagen{
-    background-color: rebeccapurple;
-    width: 200px;
-    height: 250px;
+    border-style: solid;
+    border-color: rebeccapurple; 
+    width: 150px;
+    height: 200px;
+    margin-bottom: 10px;
 }
+.text2{
+    max-width: 150px;
+}
+.sec2-card{         /*Esta es la carta*/
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+
 .sec2-title{
     font-size: 36px;
     font-weight: bolder;
@@ -83,13 +115,43 @@ a{
     text-align: center;
     padding: 20px;
 }
-.cards2{
+.cards2{         /*Conjunto de cartas*/
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.sec2-card{
+
+
+
+/*section 3 --------------------------------*/
+.refer{
+    font-style: italic;
+    font-weight: bolder;
     display: flex;
-    flex-direction: column ;
+    justify-content: flex-end;
+}
+
+/*section 4 --------------------------------*/
+.azul{
+    background-color: #3882F6;
+    padding: 30px;
+    color: #f9faf8;
+    display: flex;
     align-items: center;
+    justify-content: space-evenly;
+}
+
+.title4{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.b2{
+    padding: 4px 20px;
+    font-weight: 800;
+    color: #f9faf8;
+    background-color: #3882F6;
+    border-color: #f9faf8;
+    border-radius: 10px;
 }
